@@ -1,0 +1,9 @@
+.element {
+  border: solid 1px red;
+  overflow: hidden;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}

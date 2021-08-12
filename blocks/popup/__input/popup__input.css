@@ -1,0 +1,7 @@
+.popup__input {
+  border: 0;
+  padding: 0;
+  margin: 0 0 48px;
+  display: flex;
+  flex-direction: column;
+}

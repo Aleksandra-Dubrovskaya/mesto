@@ -1,0 +1,9 @@
+.profile__subtitle {
+  border: solid 1px red;
+  margin: 16px 0 0 0;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: normal;
+}

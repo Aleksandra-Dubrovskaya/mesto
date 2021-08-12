@@ -1,0 +1,9 @@
+.element__description {
+  border: solid 1px red;
+  padding-top: 25px;
+  padding-bottom: 31px;
+  width: 246px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,13 @@
+.edit-button {
+  margin: 18px 0 0 18px;
+  border: 1px solid #fff;
+  background: transparent url(../../images/pen-icon.svg) no-repeat center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: opacity .5s;
+}
+
+.edit-button:hover {
+  opacity: .6;
+}

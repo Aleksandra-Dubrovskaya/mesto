@@ -1,0 +1,20 @@
+.submit-button {
+  border: 0;
+  border-radius: 2px;
+  background-color: #000;
+  height: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: inherit;
+  text-align: center;
+  color: #fff;
+  transition: opacity .5s;
+}
+
+.submit-button:hover {
+  opacity: .8;
+}
+

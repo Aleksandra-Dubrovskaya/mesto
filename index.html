@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mesto Russia</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body class="main">
   <div class="page">
@@ -26,52 +26,65 @@
         </div>
         <button class="add-button"></button>
       </section>
-
       <section class="elements">
         <div class="element">
           <img src="./images/Karachaevsk.jpg" alt="" class="element__image">
           <div class="element__description">
             <h2 class="element__title">Карачаевск</h2>
-            <img src="./images/like.svg" alt="" class="element__like-icon">
+            <img src="./images/like-icon.svg" alt="" class="element__like-icon">
           </div>
         </div>
         <div class="element">
           <img src="./images/Elbrus.jpg" alt="" class="element__image">
           <div class="element__description">
             <h2 class="element__title">Гора Эльбрус</h2>
-            <img src="./images/like.svg" alt="" class="element__like-icon">
+            <img src="./images/like-icon.svg" alt="" class="element__like-icon">
           </div>
         </div>
         <div class="element">
           <img src="./images/Dombai.jpg" alt="" class="element__image">
           <div class="element__description">
             <h2 class="element__title">Домбай</h2>
-            <img src="./images/like.svg" alt="" class="element__like-icon">
+            <img src="./images/like-icon.svg" alt="" class="element__like-icon">
           </div>
         </div>
         <div class="element">
           <img src="./images/Elbrus.jpg" alt="" class="element__image">
           <div class="element__description">
             <h2 class="element__title">Гора Эльбрус</h2>
-            <img src="./images/like.svg" alt="" class="element__like-icon">
+            <img src="./images/like-icon.svg" alt="" class="element__like-icon">
           </div>
         </div>
         <div class="element">
           <img src="./images/Dombai.jpg" alt="" class="element__image">
           <div class="element__description">
             <h2 class="element__title">Домбай</h2>
-            <img src="./images/like.svg" alt="" class="element__like-icon">
+            <img src="./images/like-icon.svg" alt="" class="element__like-icon">
           </div>
         </div>
         <div class="element">
           <img src="./images/Karachaevsk.jpg" alt="" class="element__image">
           <div class="element__description">
             <h2 class="element__title">Карачаево-Черкессия</h2>
-            <img src="./images/like.svg" alt="" class="element__like-icon">
+            <img src="./images/like-icon.svg" alt="" class="element__like-icon">
           </div>
         </div>
       </section>
+      <section class="popup">
+        <form class="popup__container">
+          <button class="close-button"></button>
+          <h3 class="popup__title">Редактировать профиль</h3>
+          <fieldset class="popup__input">
+            <input type="text" name="firstname" placeholder="Имя" class="popup__text">
+            <input type="text" name="job" placeholder="О себе" class="popup__text">
+          </fieldset>
+          <button type="submit" class="submit-button">Сохранить</button>
+        </form>
+      </section>
     </main>
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
+    </footer>
   </div>
 </body>
 </html>
