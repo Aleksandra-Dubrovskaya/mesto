@@ -2,7 +2,7 @@
   margin: 0;
   border: 2px solid #fff;
   background: transparent url(../../images/cross-icon.svg) no-repeat center;
-  background-size: 50% 50%;
+  background-size: 22px;
   width: 150px;
   height: 50px;
   cursor: pointer;
@@ -11,4 +11,17 @@
 
 .add-button:hover {
   opacity: .6;
+}
+
+@media screen and (max-width: 950px) {
+  .add-button {
+    margin-top: 36px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .add-button {
+    background-size: 16px;
+    width: 100%;
+  }
 }

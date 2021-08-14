@@ -1,8 +1,13 @@
 .elements {
-  border: solid 1px red;
   width: 100%;
-  padding-top: 47px;
+  padding-top: 51px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
   gap: 20px 17px;
+}
+
+@media screen and (max-width: 550px) {
+  .elements {
+    padding-top: 36px;
+  }
 }

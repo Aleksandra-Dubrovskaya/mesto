@@ -1,5 +1,5 @@
 .element__like-icon {
-  border: solid 1px red;
+  background: url(../../../images/like-icon.svg) center;
   width: 22px;
   height: 19px;
   cursor: pointer;

@@ -1,9 +1,19 @@
 .profile__name {
-  border: solid 1px red;
   margin: 0;
   color: #fff;
+  max-width: 294px;
   font-size: 42px;
   line-height: 1.14;
   font-style: normal;
   font-weight: 500;
+}
+
+@media screen and (max-width: 550px) {
+  .profile__name {
+    max-width: 189px;
+    font-size: 27px;
+    line-height: 33px;
+    grid-column: 1/3;
+    text-align: center;
+  }
 }

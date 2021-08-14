@@ -1,4 +1,11 @@
 .profile__header {
-  border: solid 1px red;
   display: flex;
+  align-items: center;
+  position: relative;
+}
+
+@media screen and (max-width: 950px) {
+  .profile__header {
+    flex-direction: column;
+  }
 }
