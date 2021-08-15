@@ -9,11 +9,16 @@
   grid-column: 1/3;
 }
 
+@media screen and (max-width: 950px) {
+  .profile__job {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .profile__job {
     max-width: 100%;
     font-size: 14px;
     line-height: 17px;
-    text-align: center;
   }
 }
