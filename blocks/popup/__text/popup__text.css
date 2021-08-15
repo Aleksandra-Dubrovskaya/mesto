@@ -1,0 +1,43 @@
+.popup__text {
+  border: 1px solid red;
+  font-size: 14px;
+  line-height: 17px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: inherit;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  padding: 0 0 13px;
+  box-sizing: border-box;
+  margin: 0 0 30px;
+}
+
+.popup__text:last-of-type {
+  margin-bottom: 48px;
+}
+
+.popup__text:focus {
+  outline: none;
+}
+
+.popup__text::-webkit-input-placeholder {
+  font-family: inherit;
+}
+
+.popup__text::-moz-placeholder {
+  font-family: inherit;
+}
+
+.popup__text::-ms-input-placeholder {
+  font-family: inherit;
+}
+
+.popup__text::placeholder {
+  font-family: inherit;
+}
+
+@media screen and (max-width: 550px) {
+  .popup__text:last-of-type {
+    margin-bottom: 45px;
+  }
+}

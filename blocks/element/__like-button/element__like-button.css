@@ -1,4 +1,5 @@
-.element__like-icon {
+.element__like-button {
+  border: 0;
   background: url(../../../images/like-icon.svg) center;
   width: 22px;
   height: 19px;
@@ -6,6 +7,6 @@
   transition: opacity .5s;
 }
 
-.element__like-icon:hover {
+.element__like-button:hover {
   opacity: .5;
 }
