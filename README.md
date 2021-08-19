@@ -13,4 +13,4 @@
 
 **GitHub Pages**
 
-* [Ссылка на проектную работу на GitHub Pages](https://aleksandra-dubrovskaya.github.io/mesto/)
+* [Ссылка на проектную работу на GitHub Pages]()
