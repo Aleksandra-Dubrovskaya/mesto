@@ -7,6 +7,9 @@
   font-style: normal;
   font-weight: normal;
   grid-column: 1/3;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 950px) {
@@ -17,7 +20,7 @@
 
 @media screen and (max-width: 550px) {
   .profile__job {
-    max-width: 100%;
+    max-width: 282px;
     font-size: 14px;
     line-height: 17px;
   }

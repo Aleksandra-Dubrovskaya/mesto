@@ -1,5 +1,6 @@
 .profile__add-button {
   margin: 0;
+  padding: 0;
   border: 2px solid #fff;
   border-radius: 2px;
   background: transparent url(../../../images/close-icon.svg) no-repeat center;
