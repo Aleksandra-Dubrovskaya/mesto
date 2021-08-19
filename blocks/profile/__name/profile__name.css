@@ -6,15 +6,10 @@
   line-height: 1.14;
   font-style: normal;
   font-weight: 500;
+  grid-column: 2/3;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-}
-
-@media screen and (max-width: 950px) {
-  .profile__name {
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 550px) {
@@ -22,5 +17,6 @@
     max-width: 189px;
     font-size: 27px;
     line-height: 33px;
+    text-align: center;
   }
 }
