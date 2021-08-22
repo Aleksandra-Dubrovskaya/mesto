@@ -15,56 +15,56 @@
     <main class="content">
       <section class="profile">
         <div class="profile__header">
-          <img src="./images/cousteau_pic.jpg" alt="фотография Жак-Ива Кусто" class="profile__avatar">
+          <img src="./images/cousteau_pic.jpg" alt="Аватар пользователя" class="profile__avatar">
             <div class="profile__info">
               <h1 class="profile__name">Жак-Ив Кусто</h1>
-              <button type="button" class="profile__edit-button"></button>
+              <button aria-label="Редактировать" type="button" class="profile__edit-button"></button>
               <p class="profile__job">Исследователь океана</p>
             </div>
         </div>
-        <button type="button" class="profile__add-button"></button>
+        <button aria-label="Добавить" type="button" class="profile__add-button"></button>
       </section>
       <section class="elements">
         <article class="element">
           <img src="./images/karashaevsk.jpg" alt="фотография Карачаевска" class="element__image">
           <div class="element__description">
             <h2 class="element__title">Карачаевск</h2>
-            <button type="button" class="element__like-button"></button>
+            <button aria-label="Нравится" type="button" class="element__like-button"></button>
           </div>
         </article>
         <article class="element">
           <img src="./images/elbrus-mountain.jpg" alt="фотография горы Эльбрус" class="element__image">
           <div class="element__description">
             <h2 class="element__title">Гора Эльбрус</h2>
-            <button type="button" class="element__like-button"></button>
+            <button aria-label="Нравится" type="button" class="element__like-button"></button>
           </div>
         </article>
         <article class="element">
           <img src="./images/dombai-mountain.jpg" alt="фотография Домбая" class="element__image">
           <div class="element__description">
             <h2 class="element__title">Домбай</h2>
-            <button type="button" class="element__like-button"></button>
+            <button aria-label="Нравится" type="button" class="element__like-button"></button>
           </div>
         </article>
         <article class="element">
           <img src="./images/elbrus-mountain.jpg" alt="фотография горы Эльбрус" class="element__image">
           <div class="element__description">
             <h2 class="element__title">Гора Эльбрус</h2>
-            <button type="button" class="element__like-button"></button>
+            <button aria-label="Нравится" type="button" class="element__like-button"></button>
           </div>
         </article>
         <article class="element">
           <img src="./images/dombai-mountain.jpg" alt="фотография Домбая" class="element__image">
           <div class="element__description">
             <h2 class="element__title">Домбай</h2>
-            <button type="button" class="element__like-button"></button>
+            <button aria-label="Нравится" type="button" class="element__like-button"></button>
           </div>
         </article>
         <article class="element">
           <img src="./images/karashaevsk.jpg" alt="фотография Карачаевска" class="element__image">
           <div class="element__description">
             <h2 class="element__title">Карачаево-Черкессия</h2>
-            <button type="button" class="element__like-button"></button>
+            <button aria-label="Нравится" type="button" class="element__like-button"></button>
           </div>
         </article>
       </section>
@@ -76,7 +76,7 @@
       <div class="popup__container">
         <button type="button" class="popup__close-button"></button>
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form name="submit-form" class="popup__form">
+        <form name="edit-profile" class="popup__form">
           <input type="text" name="firstname" placeholder="Имя" class="popup__text popup__text_type_name" required>
           <input type="text" name="job" placeholder="О себе" class="popup__text popup__text_type_job" required>
           <button type="submit" class="popup__submit-button">Сохранить</button>
