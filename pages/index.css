@@ -16,6 +16,7 @@
 @import url(../blocks/profile/__add-button/profile__add-button.css);
 @import url(../blocks/elements/elements.css);
 @import url(../blocks/element/element.css);
+@import url(../blocks/element/__remove-button/element__remove-button.css);
 @import url(../blocks/element/__image/element__image.css);
 @import url(../blocks/element/__description/element__description.css);
 @import url(../blocks/element/__title/element__title.css);
@@ -24,12 +25,18 @@
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 @import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_type/popup_type_edit-profile.css);
+@import url(../blocks/popup/_type/popup_type_add-card.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__close-button/popup__close-button.css);
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/__form/popup__form.css);
+@import url(../blocks/popup/__form/_type/popup__form_type_edit-profile.css);
+@import url(../blocks/popup/__form/_type/popup__form_type_add-card.css);
 @import url(../blocks/popup/__text/popup__text.css);
 @import url(../blocks/popup/__text/_type/popup__text_type_name.css);
 @import url(../blocks/popup/__text/_type/popup__text_type_job.css);
+@import url(../blocks/popup/__text/_type/popup__text_type_title.css);
+@import url(../blocks/popup/__text/_type/popup__text_type_image-link.css);
 @import url(../blocks/popup/__submit-button/popup__submit-button.css);
