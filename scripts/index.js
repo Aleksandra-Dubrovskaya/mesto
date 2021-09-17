@@ -59,11 +59,20 @@ const popupImageTitle = popupOpenImage.querySelector('.popup__image-title');
 
 const openPopup = (popup) => {
   popup.classList.add('popup_opened');
-}; // универсальная функция открытия попапа
+  document.addEventListener('keydown', closePopupByEsc);
+};
 
 const closePopup = (popup) => {
   popup.classList.remove('popup_opened');
+  document.removeEventListener('keydown', closePopupByEsc);
 }; // универсальная функция закрытия попапа
+
+const closePopupByEsc = (event) => {
+  if (event.key === 'Escape') {
+    const popupOpened = document.querySelector('.popup_opened');
+    closePopup(popupOpened);
+  }
+};
 
 const openEditProfilePopup = () => {
   openPopup(popupEditProfile);

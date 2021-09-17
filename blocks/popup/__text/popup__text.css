@@ -8,11 +8,7 @@
   border-bottom: 1px solid rgba(0, 0, 0, .2);
   padding: 0 0 13px;
   box-sizing: border-box;
-  margin: 0 0 30px;
-}
-
-.popup__text:last-of-type {
-  margin-bottom: 48px;
+  margin: 0;
 }
 
 .popup__text:focus {
@@ -35,8 +31,3 @@
   font-family: inherit;
 }
 
-@media screen and (max-width: 550px) {
-  .popup__text:last-of-type {
-    margin-bottom: 45px;
-  }
-}
