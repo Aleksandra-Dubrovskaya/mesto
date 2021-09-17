@@ -59,16 +59,18 @@ const popupImageTitle = popupOpenImage.querySelector('.popup__image-title');
 
 const openPopup = (popup) => {
   popup.classList.add('popup_opened');
-  document.addEventListener('keydown', closePopupByEsc);
+  document.addEventListener('keydown', closePopupByPress);
+  document.addEventListener('click', closePopupByPress);
 };
 
 const closePopup = (popup) => {
   popup.classList.remove('popup_opened');
-  document.removeEventListener('keydown', closePopupByEsc);
+  document.removeEventListener('keydown', closePopupByPress);
+  document.removeEventListener('click', closePopupByPress);
 }; // универсальная функция закрытия попапа
 
-const closePopupByEsc = (event) => {
-  if (event.key === 'Escape') {
+const closePopupByPress = (event) => {
+  if (event.key === 'Escape' || event.target.classList.contains('popup_opened')) {
     const popupOpened = document.querySelector('.popup_opened');
     closePopup(popupOpened);
   }
