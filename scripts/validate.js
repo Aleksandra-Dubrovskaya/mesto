@@ -26,6 +26,12 @@ const hasInvalidInput = (inputList) => {
   });
 };
 
+const hasNotInputValues = (inputList) => {
+  return inputList.some(inputElement => {
+    return !inputElement.value.length === 0;
+  });
+};
+
 const disableSubmitButton = (buttonElement, inactiveButtonClass) => {
   buttonElement.classList.add(inactiveButtonClass);
   buttonElement.setAttribute('disabled', true);
@@ -38,7 +44,7 @@ const enableSubmitButton = (buttonElement, inactiveButtonClass) => {
 
 const toggleButtonState = (formElement, inputList, submitButtonSelector, inactiveButtonClass) => {
   const buttonElement = formElement.querySelector(submitButtonSelector);
-  if (hasInvalidInput(inputList)) {
+  if (hasInvalidInput(inputList) || hasNotInputValues(inputList)) {
     disableSubmitButton(buttonElement, inactiveButtonClass);
   } else {
     enableSubmitButton(buttonElement, inactiveButtonClass);

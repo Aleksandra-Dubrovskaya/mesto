@@ -59,20 +59,26 @@ const popupImageTitle = popupOpenImage.querySelector('.popup__image-title');
 
 const openPopup = (popup) => {
   popup.classList.add('popup_opened');
-  document.addEventListener('keydown', closePopupByPress);
-  document.addEventListener('click', closePopupByPress);
+  document.addEventListener('keydown', closePopupByEsc);
+  document.addEventListener('click', closePopupByOverlay);
 };
 
 const closePopup = (popup) => {
   popup.classList.remove('popup_opened');
-  document.removeEventListener('keydown', closePopupByPress);
-  document.removeEventListener('click', closePopupByPress);
+  document.removeEventListener('keydown', closePopupByEsc);
+  document.removeEventListener('click', closePopupByOverlay);
 }; // универсальная функция закрытия попапа
 
-const closePopupByPress = (event) => {
-  if (event.key === 'Escape' || event.target.classList.contains('popup_opened')) {
+const closePopupByEsc = (event) => {
+  if (event.key === 'Escape') {
     const popupOpened = document.querySelector('.popup_opened');
     closePopup(popupOpened);
+  }
+};
+
+const closePopupByOverlay = (event) => {
+  if (event.target.classList.contains('popup_opened')) {
+    closePopup(event.target);
   }
 };
 
@@ -100,7 +106,7 @@ const removeCardHandler = (event) => {
 const popupOpenImageHandler = (event) => {
   popupImage.src = event.target.src;
   popupImage.alt = event.target.alt;
-  popupImageTitle.textContent = event.target.closest('.element').querySelector('.element__title').textContent;
+  popupImageTitle.textContent = event.target.alt;
   openPopup(popupOpenImage);
 }; // обработчик события для открытия попапа с фотографией карточки
 
@@ -132,6 +138,11 @@ const addCardFormHandler = (event) => {
   closePopup(popupAddCard);
 
   addCardForm.reset();
+
+  popupSubmitButton.classList.add('.popup__submit-button_disabled');
+  popupSubmitButton.setAttribute('disabled', true);
+
+  // TODO
 }; // обработчик события формы добавления новой карточки
 
 initialCards.forEach ((element) => renderCard(element)); // добавление начальных карточек на страницу
