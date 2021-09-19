@@ -45,7 +45,7 @@ const editPopupButton = document.querySelector('.profile__edit-button');
 
 const popupAddCard = document.querySelector('.popup_type_add-card');
 const addCardForm = document.querySelector('.popup__form_type_add-card');
-const popupSubmitButtons = document.querySelectorAll('.popup__submit-button');
+const popupAddCardSubmitButton = popupAddCard.querySelector('.popup__submit-button');
 const titleInput = document.querySelector('.popup__text_type_title');
 const imageLinkInput = document.querySelector('.popup__text_type_image-link');
 const addPopupButton = document.querySelector('.profile__add-button');
@@ -132,10 +132,8 @@ const addCardFormHandler = (event) => {
 
   addCardForm.reset();
 
-  popupSubmitButtons.forEach((submitButton) => {
-    submitButton.classList.add('popup__submit-button_disabled');
-    submitButton.setAttribute('disabled', true);
-  });
+  popupAddCardSubmitButton.classList.add('popup__submit-button_disabled');
+  popupAddCardSubmitButton.setAttribute('disabled', true);
 }; // обработчик события формы добавления новой карточки
 
 initialCards.forEach ((element) => renderCard(element)); // добавление начальных карточек на страницу
