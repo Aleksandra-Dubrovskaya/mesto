@@ -1,32 +1,6 @@
+import {initialCards} from "./initialCards.js"
 import Card from "./Card.js";
 import FormValidator from "./FormValidator.js";
-
-const initialCards = [
-  {
-    name: 'Байкал',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
-  },
-  {
-    name: 'Холмогорский район',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
-  },
-  {
-    name: 'Камчатка',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
-  },
-  {
-    name: 'Иваново',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
-  },
-  {
-    name: 'Челябинская область',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
-  },
-  {
-    name: 'Архыз',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
-  }
-];
 
 const cardsContainer = document.querySelector('.elements');
 const popups = document.querySelectorAll('.popup');
@@ -39,7 +13,6 @@ const editProfileForm = document.querySelector('.popup__form_type_edit-profile')
 const editPopupButton = document.querySelector('.profile__edit-button');
 const popupAddCard = document.querySelector('.popup_type_add-card');
 const addCardForm = document.querySelector('.popup__form_type_add-card');
-const popupAddCardSubmitButton = popupAddCard.querySelector('.popup__submit-button');
 const titleInput = document.querySelector('.popup__text_type_title');
 const imageLinkInput = document.querySelector('.popup__text_type_image-link');
 const addPopupButton = document.querySelector('.profile__add-button');
@@ -112,21 +85,15 @@ const addCardFormHandler = (event) => {
   renderCard(card);
 
   closePopup(popupAddCard);
-
   addCardForm.reset();
-
-  popupAddCardSubmitButton.classList.add('popup__submit-button_disabled');
-  popupAddCardSubmitButton.setAttribute('disabled', true);
+  disableSubmitButton();
 };
 
 popups.forEach((popup) => {
   popup.addEventListener('click', (event) => {
-    if (event.target.classList.contains('popup_opened')) {
+    if (event.target.classList.contains('popup_opened') || event.target.classList.contains('popup__close-button')) {
       closePopup(popup)
-    }
-    if (event.target.classList.contains('popup__close-button')) {
-      closePopup(popup)
-    }
+    };
   });
 });
 
