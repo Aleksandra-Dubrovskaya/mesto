@@ -86,7 +86,7 @@ const addCardFormHandler = (event) => {
 
   closePopup(popupAddCard);
   addCardForm.reset();
-  disableSubmitButton();
+  addCardValidate.disableSubmitButton();
 };
 
 popups.forEach((popup) => {
