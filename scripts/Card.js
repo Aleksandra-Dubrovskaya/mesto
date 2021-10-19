@@ -1,9 +1,10 @@
 export default class Card {
-  constructor(data, cardSelector, popupOpenImageHandler) {
+  constructor({ data, popupOpenImageHandler }, cardSelector) {
     this._name = data.name;
     this._link = data.link;
     this._cardSelector = cardSelector;
     this._popupOpenImageHandler = popupOpenImageHandler;
+    // переименовать в handleCardClick
   }
 
   _getCardTemplate() {
@@ -18,6 +19,7 @@ export default class Card {
 
   generateCard() {
     this._element = this._getCardTemplate();
+    // this._img = this._element.querySelector('.element__image');
     this._setEventListeners();
 
     this._element.querySelector('.element__title').textContent = this._name;
