@@ -1,45 +1,37 @@
-export const cardsContainer = document.querySelector('.elements');
-export const popups = document.querySelectorAll('.popup');
-export const popupEditProfile = document.querySelector('.popup_type_edit-profile');
-export const nameInput = document.querySelector('.popup__text_type_name');
-export const jobInput = document.querySelector('.popup__text_type_job');
-export const profileName = document.querySelector('.profile__name');
-export const profileJob = document.querySelector('.profile__job');
-export const editProfileForm = document.querySelector('.popup__form_type_edit-profile');
 export const editPopupButton = document.querySelector('.profile__edit-button');
-export const popupAddCard = document.querySelector('.popup_type_add-card');
-export const addCardForm = document.querySelector('.popup__form_type_add-card');
-export const titleInput = document.querySelector('.popup__text_type_title');
-export const imageLinkInput = document.querySelector('.popup__text_type_image-link');
 export const addPopupButton = document.querySelector('.profile__add-button');
-export const popupOpenImage = document.querySelector('.popup_type_open-image');
-export const popupImage = popupOpenImage.querySelector('.popup__image');
-export const popupImageTitle = popupOpenImage.querySelector('.popup__image-title');
+
+import baikalImage from '../images/cards/baikal.jpeg';
+import kholmogorskyRayonImage from '../images/cards/kholmogorsky-rayon.jpeg';
+import kamchatkaImage from '../images/cards/kamchatka.jpeg';
+import ivanovoImage from '../images/cards/ivanovo.jpeg';
+import chelyabinskOblastImage from '../images/cards/chelyabinsk-oblast.jpeg';
+import arkhyzImage from '../images/cards/arkhyz.jpeg';
 
 export const initialCards = [
   {
     name: 'Байкал',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
+    link: baikalImage
   },
   {
     name: 'Холмогорский район',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
+    link: kholmogorskyRayonImage
   },
   {
     name: 'Камчатка',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
+    link: kamchatkaImage
   },
   {
     name: 'Иваново',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
+    link: ivanovoImage
   },
   {
     name: 'Челябинская область',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
+    link: chelyabinskOblastImage
   },
   {
     name: 'Архыз',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
+    link: arkhyzImage
   }
 ];
 

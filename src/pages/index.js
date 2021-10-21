@@ -1,15 +1,16 @@
+import "./index.css";
 import {
   initialCards,
   config,
   editPopupButton,
   addPopupButton
-} from "../src/utils/constants.js"
-import Card from "./Card.js";
-import FormValidator from "./FormValidator.js";
-import PopupWithForm from "../src/components/PopupWithForm.js";
-import PopupWithImage from "../src/components/PopupWithImage.js";
-import UserInfo from "../src/components/UserInfo.js";
-import Section from "../src/components/Section.js"
+} from "../utils/constants.js"
+import Card from "../components/Card.js";
+import FormValidator from "../components/FormValidator.js";
+import PopupWithForm from "../components/PopupWithForm.js";
+import PopupWithImage from "../components/PopupWithImage.js";
+import UserInfo from "../components/UserInfo.js";
+import Section from "../components/Section.js";
 
 
 // информация о пользователе
