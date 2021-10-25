@@ -3,4 +3,10 @@
   height: 282px;
   object-fit: cover;
   object-position: center;
+  cursor: pointer;
+  transition: opacity .5s;
+}
+
+.element__image:hover {
+  opacity: .6;
 }

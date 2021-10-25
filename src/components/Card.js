@@ -32,8 +32,9 @@ export default class Card {
     event.target.classList.toggle('element__like-button_active');
   }
 
-  _removeCardHandler(event) {
-    event.target.closest('.element').remove();
+  _removeCardHandler() {
+    this._element.remove();
+    this._element = null;
   }
 
   _setEventListeners() {
@@ -44,8 +45,8 @@ export default class Card {
       });
     this._element
       .querySelector('.element__remove-button')
-      .addEventListener('click', (event) => {
-        this._removeCardHandler(event);
+      .addEventListener('click', () => {
+        this._removeCardHandler();
       });
     this._img
       .addEventListener('click', () => {

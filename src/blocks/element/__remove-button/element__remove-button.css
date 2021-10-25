@@ -9,6 +9,7 @@
   right: 15px;
   cursor: pointer;
   transition: opacity .5s;
+  z-index: 1;
 }
 
 .element__remove-button:hover {
