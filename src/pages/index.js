@@ -35,7 +35,7 @@ const userInfo = new UserInfo({
 
 Promise.all([api.getUserData(), api.getInitialCards()])
   .then(([userData, cardsData]) => {
-    const { name, about, avatar, _id} = userData;
+    const { name, about, avatar, _id } = userData;
     userInfo.setUserInfo({ username: name, userjob: about });
     userInfo.setUserAvatar({ useravatar: avatar });
     userId = _id;
